@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition duration-300">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur shadow-sm z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-xl">&lt;SSC /&gt;</h1>
+
+    <nav class="space-x-6 hidden md:flex ml-auto pr-4 ">
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#skills" class="hover:text-blue-500">Skills</a>
+      <a href="#experience" class="hover:text-blue-500">Experience</a>
+      <a href="#work" class="hover:text-blue-500">Work</a>
+      <a href="#testimonials" class="hover:text-blue-500">Testimonials</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+      <!-- Dark Mode Button -->
+      <button id="theme-toggle" class="w-10 h-10 rounded-full flex items-center justify-center">
+      <img id="theme-icon" src="images/task5/light.png" alt="Theme Toggle" class="w-6 h-6">
+      </button>
+      <button class="bg-black text-white px-4 py-2 rounded dark:bg-white dark:text-black">
+        Download CV
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="pt-32 pb-20 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+  <div class="flex-1">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Ahsan 👋</h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">
+   I am a full stack developer (React.js and Node.js) 
+   with a focus on creating (and occasionally designing) exceptional digital experiences 
+   that are fast, accessible, visually appealing, and responsive. Even though I 
+   have been creating web applications for over 7 years, I still love it as if it was something new.
+    </p>
+    <p class="text-gray-600 dark:text-gray-300 mb-4 ">
+    <img src="images/task5/Icon.png" class="inline-block">
+      Abbottabad,Pakistan
+    </p>
+    <p class="text-gray-600 dark:text-gray-300 mb-4 ">
+    <img src="images/task5/Icon1.png" class="inline-block">
+      Available for new projects
+    </p>
+
+    <div class="flex gap-4">
+      <img src="images/task5/Icon2.png" class="w-6">
+      <img src="images/task5/Icon3.png" class="w-6">
+      <img src="images/task5/Icon fig.png" class="w-6">
+    </div>
+  </div>
+
+  <img src="images/task5/profile.png"  class="w-64 rounded-lg shadow-lg">
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-4 bg-gray-50 dark:bg-gray-800">
+  <section class=" text-center mb-12">
+   <h3 class="inline-block bg-gray-200 dark:bg-gray-700 px-8 py-2 rounded-full text-2xl font-semibold mb-8 ">About Me</h3>
+   </section>
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+    <img src="images/task5/Pic Container.png" class="rounded-lg shadow-md" alt="About Me Image">
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Curious about me? Here you have it:</h3>
+      <p class="text-gray-600 dark:text-gray-300 mb-4">
+        I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
+      </p>
+      <p class="text-gray-600 dark:text-gray-300 mb-4">
+        I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, NestJS, TailwindCSS, Supabase and much more.
+      </p>
+      <p class="text-gray-600 dark:text-gray-300 mb-4">
+        I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.
+      </p>
+      <p class="text-gray-600 dark:text-gray-300 mb-4">
+        When I'm not in full-on developer mode, you can find me hovering around on Twitter or on Indie Hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.
+      </p>
+      <h4 class="text-lg font-semibold mt-6 mb-2 text-gray-800 dark:text-white">
+        Finally, some quick bits about me:
+      </h4>
+      <ul class="grid grid-cols-2 gap-x-6 gap-y-2 text-gray-600 dark:text-gray-300 list-disc list-inside">
+        <li>B.E in Computer Engineering</li>
+        <li>Avid Learner</li>
+        <li>Full Time freelancer</li>
+        <li>Aspiring Indie Hacker</li>
+      </ul>
+      <p class="text-gray-600 dark:text-gray-300 mt-4">
+        One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills"   class="py-20 text-center bg-white dark:bg-gray-900">
+  <div class="inline-block bg-gray-200 dark:bg-gray-700 px-8 py-2 rounded-full">
+    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+      Skills
+    </h3>
+  </div>
+  <!-- Subheading -->
+  <p class="mt-4 mb-12 text-lg font-sans text-gray-600 dark:text-gray-300">
+    The skills, tools and technologies I am really good at:
+  </p>
+
+  </h3>
+  <div class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-y-10 gap-x-6">
+    <!-- Skill Item -->
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-javscript.svg" class="h-14 w-auto" alt="JavaScript">
+      <p class="text-sm text-gray-600 dark:text-gray-300">JavaScript</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-typescript.svg" class="h-14 w-auto" alt="TypeScript">
+      <p class="text-sm text-gray-600 dark:text-gray-300">TypeScript</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-react.svg" class="h-14 w-auto" alt="React">
+      <p class="text-sm text-gray-600 dark:text-gray-300">React</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-nextjs.svg" class="h-14 w-auto" alt="Next.js">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Next.js</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-nodejs.svg" class="h-14 w-auto" alt="Node.js">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Node.js</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-express.svg" class="h-14 w-auto" alt="Express.js">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Express.js</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-nest.svg" class="h-14 w-auto" alt="Nest.js">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Nest.js</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-socket.svg" class="h-14 w-auto" alt="Socket.io">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Socket.io</p>
+    </div>
+
+    <!-- Second Row -->
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-postgresql.svg" class="h-14 w-auto" alt="PostgreSQL">
+      <p class="text-sm text-gray-600 dark:text-gray-300">PostgreSQL</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-mongodb.svg" class="h-14 w-auto" alt="MongoDB">
+      <p class="text-sm text-gray-600 dark:text-gray-300">MongoDB</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-sass.svg" class="h-14 w-auto" alt="Sass/Scss">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Sass</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-tailwindcss.svg" class="h-14 w-auto" alt="Tailwind CSS">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Tailwind CSS</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-figma.svg" class="h-14 w-auto" alt="Figma">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Figma</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-cypress.svg" class="h-14 w-auto" alt="Cypress">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Cypress</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-storybook.svg" class="h-14 w-auto" alt="Storybook">
+      <p class="text-sm text-gray-600 dark:text-gray-300">Storybook</p>
+    </div>
+
+    <div class="flex flex-col items-center space-y-2">
+      <img src="images/task5/icon-git.svg" class="h-14 w-auto" alt="GitHub">
+      <p class="text-sm text-gray-600 dark:text-gray-300">GitHub</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience"  class="py-20 bg-gray-50 dark:bg-gray-800">
+  <!-- Section Header -->
+  <div class="text-center mb-12">
+    <h3 class="inline-block bg-gray-200 dark:bg-gray-700 px-8 py-2 rounded-full text-2xl font-semibold">
+      Experience
+    </h3>
+    <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+      Here is a quick summary of my professional journey.
+    </p>
+  </div>
+
+  <!-- Experience Cards Container -->
+  <div class="max-w-5xl mx-auto px-6 space-y-10">
+
+    <!-- Experience Card 1 -->
+    <div class="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-8 flex flex-col md:flex-row gap-8">
+      <div class="md:w-40 flex-shrink-0">
+        <img src="images/task5/logo-upwork.png">
+      </div>
+      <div class="flex-1">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Sr. Frontend Developer</h2>
+          <span class="text-sm text-gray-500 dark:text-gray-400 mt-2 md:mt-0">Nov 2021 - Present</span>
+        </div>
+        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-600 dark:text-gray-300">
+          <li>Lorem ipsum dolor sit amet best of the body consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor sit not all people do this amet consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor sit amet all regards to this consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor not by at the time of cash sit amet consectetur adipiscing elit.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Experience Card 2 -->
+    <div class="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-8 flex flex-col md:flex-row gap-8">
+      <div class="md:w-40 flex-shrink-0">
+         <img src="images/task5/logo-upwork.png">
+      </div>
+      <div class="flex-1">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Team Lead</h2>
+          <span class="text-sm text-gray-500 dark:text-gray-400 mt-2 md:mt-0">July 2017 - Oct 2021</span>
+        </div>
+        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-600 dark:text-gray-300">
+          <li>Lorem ipsum dolor sit by eat of the story amet consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor sit amet not my man city of consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor getting by sort hand property sit amet consectetur adipiscing.</li>
+          <li>Lorem ipsum dolor sit lets have my cash in hand amet consectetur adipiscing elit.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Experience Card 3 -->
+    <div class="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-8 flex flex-col md:flex-row gap-8">
+      <div class="md:w-40 flex-shrink-0">
+         <img src="images/task5/logo-upwork.png">
+      </div>
+      <div class="flex-1">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Full Stack Developer</h2>
+          <span class="text-sm text-gray-500 dark:text-gray-400 mt-2 md:mt-0">Dec 2015 - May 2017</span>
+        </div>
+        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-600 dark:text-gray-300">
+          <li>Lorem ipsum dolor sit amet of consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ================= WORK ================= -->
+   <section id="work" class="py-2 text-center"> 
+  <h3 class="inline-block bg-gray-200 dark:bg-gray-700 px-8 py-2 rounded-full text-2xl font-semibold mb-4">
+  Work</h3> <!-- Work Item --> 
+  <p class="mt-4 mb-12 text-lg font-sans text-gray-600 dark:text-gray-300"> 
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+ <!---11111111-->
+ <div class="flex flex-col md:flex-row items-start  p-6 mb-12  gap-2">
+  <div class="md:w-1/2 flex justify-center relative">
+  <!-- Light grey "box" behind the image -->
+  <div class="bg-gray-100 dark:bg-gray-700 p-9 rounded-lg shadow-md">
+    <img src="images/task5/Picture.png" alt="Fiskil Project" class="rounded-lg w-100h-auto shadow-lg">
+  </div>
+</div>
+     <!-- Content Div -->
+  <div class="md:w-1/2 flex flex-col gap-4 items-start">
+    <!-- Heading -->
+    <h4 class="text-xl font-semibold text-gray-800 dark:text-white text-left">Fiskil</h4>
+
+    <!-- Paragraph -->
+    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-left">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis incidunt architecto vel fugit unde! 
+      Doloremque aut recusandae quod delectus libero necessitatibus, corrupti nobis, sequi voluptate earum ea. 
+      Reiciendis, sint est!
+    </p>
+
+    <!-- Tech Spans in rows of 3 -->
+    <div class="grid grid-cols-3 gap-2 mt-2 ">
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">React</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Next.js</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">TypeScript</span>
+
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Nest.js</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-5 py-1 rounded-full text-sm">PostgreSQL</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">TailwindCSS</span>
+
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Figma</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Cypress</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Storybook</span>
+
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Git</span>
+    </div>  
+    <img src="images/task5/Icon Button.png" >
+    </div>
+  </div>
+  <!---22222222-->
+  <div class="flex flex-col md:flex-row items-start  p-6 mb-12 gap-2">
+  <div class="md:w-1/2 flex justify-center relative">
+  <!-- Light grey "box" behind the image -->
+  <div class="bg-gray-100 dark:bg-gray-700 p-9 rounded-lg shadow-md">
+    <img src="images/task5/Picture.png" alt="Fiskil Project" class="rounded-lg w-100 h-auto shadow-lg">
+  </div>
+</div>
+     <!-- Content Div -->
+  <div class="md:w-1/2 flex flex-col gap-4 items-start">
+    <!-- Heading -->
+    <h4 class="text-xl font-semibold text-gray-800 dark:text-white text-left">Fiskil</h4>
+
+    <!-- Paragraph -->
+    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-left">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis incidunt architecto vel fugit unde! 
+      Doloremque aut recusandae quod delectus libero necessitatibus, corrupti nobis, sequi voluptate earum ea. 
+      Reiciendis, sint est!
+    </p>
+
+    <!-- Tech Spans in rows of 3 -->
+    <div class="grid grid-cols-3 gap-2 mt-2 gap-2">
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">React</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Next.js</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">TypeScript</span>
+
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Nest.js</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-5 py-1 rounded-full text-sm">PostgreSQL</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">TailwindCSS</span>
+
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Figma</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Cypress</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Storybook</span>
+
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Git</span>
+    </div>  
+    <img src="images/task5/Icon Button.png" >
+    </div>
+  </div>
+  
+ <!--333333333333-->
+  <div class="flex flex-col md:flex-row items-start  p-6 mb-12 ">
+  <div class="md:w-1/2 flex justify-center relative">
+  <!-- Light grey "box" behind the image -->
+  <div class="bg-gray-100 dark:bg-gray-700 p-9 rounded-lg shadow-md">
+    <img src="images/task5/Picture.png" alt="Fiskil Project" class="rounded-lg w-100 h-auto shadow-lg">
+  </div>
+</div>
+     <!-- Content Div -->
+  <div class="md:w-1/2 flex flex-col gap-4 items-start">
+    <!-- Heading -->
+    <h4 class="text-xl font-semibold text-gray-800 dark:text-white text-left">Fiskil</h4>
+
+    <!-- Paragraph -->
+    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-left">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis incidunt architecto vel fugit unde! 
+      Doloremque aut recusandae quod delectus libero necessitatibus, corrupti nobis, sequi voluptate earum ea. 
+      Reiciendis, sint est!
+    </p>
+
+    <!-- Tech Spans in rows of 3 -->
+    <div class="grid grid-cols-3 gap-2 mt-2 ">
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">React</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Next.js</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">TypeScript</span>
+
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Nest.js</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-5 py-1 rounded-full text-sm">PostgreSQL</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">TailwindCSS</span>
+
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Figma</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Cypress</span>
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Storybook</span>
+
+      <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-1 rounded-full text-sm">Git</span>
+    </div>  
+    <img src="images/task5/Icon Button.png" >
+    </div>
+  </div>
+</section>
+<!-- ================= TESTIMONIALS ================= -->
+<section id="testimonials" class="py-20 bg-gray-50 dark:bg-gray-800 text-center">
+  <h3 class="inline-block bg-gray-200 dark:bg-gray-700 px-8 py-2 rounded-full text-2xl font-semibold mb-4">Testimonials</h3>
+    <p class="mt-0 mb-6 text-lg font-sans text-gray-600 dark:text-gray-300">
+    Nice things People said about me:
+  </p>
+  <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
+  <!-- Testimonial 1 -->
+  <div class=" bg-gray-200 p-6 rounded  shadow-md dark:bg-gray-700">
+    <img src="images/task5/icon-user.png" class="h-16 w-auto mx-auto">
+    <p class="text-gray-600 dark:text-gray-300">"Job well done! I'm really impressed. He is very good at what he does :&#41;. I would recommend him and will hire in the future for front-end development."</p>
+    <h5 class="mt-4 font-semibold">John Doe</h5>
+    <p class="text-gray-600 dark:text-gray-300">Founder xyz.com</p>
+  </div>
+  <!-- Testimonial 2 -->
+  <div class=" bg-gray-200 p-6 rounded shadow-md dark:bg-gray-700">
+    <img src="images/task5/icon-user.png" class="h-16 w-auto mx-auto">
+    <p class="text-gray-600 dark:text-gray-300">"Job well done! I'm really impressed. He is very good at what he does :&#41;. I would recommend him and will hire in the future for front-end development."</p>
+    <h5 class="mt-4 font-semibold">John Doe</h5>
+    <p class="text-gray-600 dark:text-gray-300">Founder xyz.com</p>
+  </div>
+  <!-- Testimonial 3 -->
+  <div class=" bg-gray-200 p-6 rounded shadow-md dark:bg-gray-700">
+    <img src="images/task5/icon-user.png" class="h-16 w-auto mx-auto">
+    <p class="text-gray-600 dark:text-gray-300">"Job well done! I'm really impressed. He is very good at what he does :&#41;. I would recommend him and will hire in the future for front-end development."</p>
+    <h5 class="mt-4 font-semibold">John Doe</h5>
+    <p class="text-gray-600 dark:text-gray-300">Founder xyz.com</p>
+  </div>
+</div>
+</section>
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-4 text-center">
+  <h3 class="inline-block bg-gray-200 dark:bg-gray-700 px-8 py-2 rounded-full text-2xl font-semibold mb-4">Contact</h3>
+  <p class="mt-4 text-lg font-sans text-gray-600 dark:text-gray-300"> 
+   Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+   <p class="mt-0 mb-4 text-lg font-sans text-gray-600 dark:text-gray-300"> 
+   Lorem ipsum dolor  elit.</p>
+  <p class=" font-semibold">
+  <img src="images/task5/email.png" class="inline-block" >
+    shahhassan123@gmail.com
+   <img src="images/task5/box.png" class="inline-block" ></p>
+  <p class="font-semibold">
+   <img src="images/task5/mob.png" class="inline-block" >
+  +92 31449015
+   <img src="images/task5/box.png" class="inline-block" ></p>
+    <p class="mt-0 mb-4 text-lg font-sans text-gray-600 dark:text-gray-300"> 
+   You may also find me on these platforms</p>
+     <div class="flex justify-center items-center">
+  <img src="images/task5/Icon2.png" class="w-6">
+  <img src="images/task5/Icon3.png" class="w-6">
+  <img src="images/task5/Icon fig.png" class="w-6">
+</div>
+<footer class="text-center  text-sm text-gray-500">
+  <img src="images/task5/vecto2.png" class="inline-block">
+   2024 | Designed & coded with ❤️ by Roshaan
+</footer>
+</section>
+<!-- ================= DARK MODE SCRIPT ================= -->
+<script>
+const toggle = document.getElementById("theme-toggle");
+const icon = document.getElementById("theme-icon");
+// Check saved theme on page load
+if (localStorage.getItem("theme") === "dark") {
+  document.documentElement.classList.add("dark");
+  toggle.classList.add("bg-gray-800"); // dark background
+} else {
+  toggle.classList.add("bg-white"); // light background
+}
+// Toggle theme on click
+toggle.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark");
+
+  if (document.documentElement.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+    toggle.classList.remove("bg-white");
+    toggle.classList.add("bg-gray-800"); // dark background
+  } else {
+    localStorage.setItem("theme", "light");
+    toggle.classList.remove("bg-gray-800");
+    toggle.classList.add("bg-white"); // light background
+  }
+});
+</script>
+</body>
+</html>
