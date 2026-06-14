@@ -19,7 +19,7 @@ A modern interactive CV web project built using **HTML, CSS, and JavaScript**, f
 ## 📸 Preview
 
 ### 🌞 Light Mode
-![Light Mode CV](cv.png)
+![Light Mode CV](LightCv.png)
 
 ### 🌙 Dark Mode
 ![Dark Mode CV](CV%20in%20Dark%20mode.png)
@@ -59,14 +59,3 @@ A modern interactive CV web project built using **HTML, CSS, and JavaScript**, f
 
 This project was built as a learning exercise to improve frontend development skills.
 
----
-
-
-
-
-If you want, I can next:
-✅ Make your repo look like a **viral GitHub portfolio project**  
-✅ Add badges (HTML/CSS/JS icons at top)  
-✅ Or improve your CV project UI idea itself  
-
-Just tell me 👍
